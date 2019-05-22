@@ -1,0 +1,89 @@
+﻿{% load static %}
+{% load bootstrap %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="xo febre - O lugar certo para aprender a combater a febre">
+    <meta name="keywords" content="febre, temperatura, indisposição, combate à febre, saúde">
+    <meta name="author" content="ALPHA Developers">
+
+    <title>Xô, Febre!</title>
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+    <script language="javascript" type="text/javascript">
+        function validarformCadastro() {
+            var nome = formCadastro.nome.value;
+            var email = formCadastro.email.value;
+
+            if (nome == "") {
+                alert('Preencha um nome válido!');
+                formCadastro.nome.focus();
+                return false;
+            } else if (email == "") {
+                alert('Preencha um e-mail válido!');
+                formCadastro.email.focus();
+                return false;
+            } else if (!email.includes("@") || !email.includes(".com")) {
+                alert('E-mail inválido! Exemplos de e-mails válidos: @gmail.com, @hotmail.com');
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="{% static 'logo.png' %}" width="200" height="150" alt="logo">
+        <h1>Xô, Febre!</h1>
+        <h3>O lugar certo para aprender a combater a febre</h3>
+    </header>
+
+    <main>
+
+        <div class="container">
+        <p>
+        <h2>Inscreva-se</h2>
+        <a href="{% url 'core_consulta' %}"><button class="btn btn-default">Já sou inscrito</button></a>
+        </p>
+           
+            <form class="form-horizontal" name="formCadastro" action="{% url 'core_cadastrarPessoa' %}" method='POST'>
+                {% csrf_token %} <!--token de segurança-->
+                <div class="form-group">
+                    <div class="col-sm-3">
+                         <p>{{form.nome|bootstrap}}</p> <!--chamando o atributo nome da class PessoaForm-->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        <p>{{form.email|bootstrap}}</p> <!--chamando o atributo email da class PessoaForm-->
+                    </div>
+                </div>    
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default" onclick="return validarformCadastro()">Continuar</button>
+                            <button type="reset" class="btn btn-default">Limpar</button>
+                        </div>
+                    </div>
+        
+            </form>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="{% url 'core_listaPessoas' %}"><button class="btn btn-default">Lista de usuários</button></a>
+            <a href="{% url 'core_listaConsulta' %}"><button class="btn btn-default">Lista de consultas</button></a>
+            <a href="{% url 'core_sobre' %}"><button class="btn btn-default">Sobre</button></a>
+        </p>
+        <p>Copyright - Todos os direitos reservados | Desenvolvido por ALPHA Developers| *Conteúdo para uso acadêmico*</p>
+    </footer>
+
+</body>
+
+</html>

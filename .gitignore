@@ -1,0 +1,8 @@
+venv
+.DS_Store
+*pyc
+# See the name for you IDE
+.idea
+# If you are using sqlite3
+*.sqlite3
+

@@ -1,0 +1,303 @@
+header{
+	float: left;
+	width: 100%;
+	height:auto;
+	padding: 20px 20px;/*Pixel da imagem do cabeçalho*/
+
+	
+}
+
+
+h1 {
+	float: right;
+    margin-right: 65%;
+    margin-top:3%;
+    font: 60px "Apple Chancery", cursive;
+    font-style: normal;
+}
+
+h2{
+	font: 60px "OCR A Std", monospace;
+	font-weight: normal;
+	
+}
+
+h3{
+	float: right;
+	margin-right: 5%;
+	font: 30px "Apple Chancery", cursive;
+	font-style: normal;
+}
+
+h4{
+	font: 30px "Apple Chancery", cursive;
+	font-style: normal;
+}
+
+
+
+body {
+	font-family: Helvetica, Helvetica, Arial;
+	font: 20px "Apple Chancery", cursive;
+	color: black;
+	background-image: url(fundo.jpg);
+}
+
+footer{
+	width: 100%;
+ 	margin-top: 2.4em;
+   	margin-bottom: 2.4em;
+}
+
+
+/*MEDIA QUERY Iphone 5*/
+@media only screen and (max-width: 480px) {
+	header{
+		
+	}
+
+	#logo{
+	float: right;
+	width: 30%;
+	height: 30%;
+	
+	}
+
+	h1{
+	display: block;	
+	float: left;
+    font: 30px "Apple Chancery", cursive;
+    font-style: normal;
+    font-weight: normal;
+	}
+
+	h3{
+	float: left;	
+	font: 10px "Apple Chancery", cursive;
+	font-style: normal;
+	}
+
+	h2{
+	font: 30px "OCR A Std", monospace;
+	font-weight: normal;
+	}
+
+	h4{
+	font: 20px "Apple Chancery", cursive;
+	
+	font-style: normal;
+	}
+
+	body{
+	font-family: Helvetica, Helvetica, Arial;
+	font: 15px "Apple Chancery", cursive;
+	color: black;
+	text-align: center;
+	}
+
+	footer{
+	width: 100%;
+	clear: both;
+	}
+
+	p{
+	font: 10px "Apple Chancery", cursive;
+	text-align: center;
+	}
+
+
+}
+
+
+/*MEDIA QUERY Ipad*/
+@media only screen and (min-width: 481px) {
+	header{
+		
+	}
+
+	#logo{
+	float: right;
+	width: 30%;
+	height: 30%;
+	
+	}
+
+	h1{
+	display: block;	
+	float: left;
+    font: 50px "Apple Chancery", cursive;
+    font-style: normal;
+    font-weight: normal;
+	}
+
+	h3{
+	float: left;	
+	font: 30px "Apple Chancery", cursive;
+	font-style: normal;
+	}
+
+	h2{
+	font: 40px "OCR A Std", monospace;
+	font-weight: normal;
+	}
+
+	h4{
+	font: 30px "Apple Chancery", cursive;
+	
+	font-style: normal;
+	}
+
+	body{
+	font-family: Helvetica, Helvetica, Arial;
+	font: 25px "Apple Chancery", cursive;
+	color: black;
+	text-align: left;
+	}
+
+	footer{
+	width: 100%;
+	clear: both;
+	}
+
+	p{
+	font: 20px "Apple Chancery", cursive;
+	text-align: center;
+	}
+
+	#nome{
+		width: 200px;
+	}
+
+	#email{
+		width: 200px;
+	}
+
+
+}
+
+/*MEDIA QUERY Ipad Pro*/
+@media only screen and (min-width: 1025px) {
+	header{
+		
+	}
+
+	#logo{
+	float: right;
+	width: 30%;
+	height: 30%;
+	
+	}
+
+	h1{
+	display: block;	
+	float: left;
+    font: 60px "Apple Chancery", cursive;
+    font-style: normal;
+    font-weight: normal;
+	}
+
+	h3{
+	float: left;	
+	font: 40px "Apple Chancery", cursive;
+	font-style: normal;
+	}
+
+	h2{
+	font: 50px "OCR A Std", monospace;
+	font-weight: normal;
+	}
+
+	h4{
+	font: 40px "Apple Chancery", cursive;
+	
+	font-style: normal;
+	}
+
+	body{
+	font-family: Helvetica, Helvetica, Arial;
+	font: 35px "Apple Chancery", cursive;
+	color: black;
+	text-align: left;
+	}
+
+	footer{
+	width: 100%;
+	clear: both;
+	}
+
+	p{
+	font: 30px "Apple Chancery", cursive;
+	text-align: center;
+	}
+
+	#nome{
+		width: 300px;
+	}
+
+	#email{
+		width: 300px;
+	}
+
+	
+/*MEDIA QUERY PC*/
+@media only screen and (min-width: 1367px) {
+	header{
+		
+	}
+
+	#logo{
+	float: left;
+	width: 15%;
+	height: 15%;
+	
+	}
+
+	h1{
+	display: block;	
+	float: right;
+    font: 60px "Apple Chancery", cursive;
+    font-style: normal;
+    font-weight: normal;
+	}
+
+	h3{
+	float: right;	
+	font: 40px "Apple Chancery", cursive;
+	font-style: normal;
+	}
+
+	h2{
+	font: 50px "OCR A Std", monospace;
+	font-weight: normal;
+	}
+
+	h4{
+	font: 40px "Apple Chancery", cursive;
+	
+	font-style: normal;
+	}
+
+	body{
+	font-family: Helvetica, Helvetica, Arial;
+	font: 35px "Apple Chancery", cursive;
+	color: black;
+	text-align: left;
+	}
+
+	footer{
+	width: 100%;
+	clear: both;
+	}
+
+	p{
+	font: 25px "Apple Chancery", cursive;
+	text-align: center;
+	}
+
+	#nome{
+		width: 350px;
+	}
+
+	#email{
+		width: 350px;
+	}

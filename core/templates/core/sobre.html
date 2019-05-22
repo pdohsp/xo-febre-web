@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="xo febre - O lugar certo para aprender a combater a febre">
+    <meta name="keywords" content="febre, temperatura, indisposição, combate à febre, saúde">
+    <meta name="author" content="ALPHA Developers">
+
+    <title>Xô, Febre!</title>
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <header>
+        <img src="{% static 'logo.png' %}" width="200" height="150" alt="logo">
+        <h1>Xô, Febre!</h1>
+        <h3>O lugar certo para aprender a combater a febre</h3>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Instituto pernambucano de ensino superior</h2><br>
+            Professor: Rafael Roque.<br>
+            Alunos: Pedro Henrique, André Lima.<br> 
+            Curso: Ciências da computação.<br>
+            Período: 1<br>
+            Disciplina: Desenvolvimento em Ambiente Web
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="{% url 'core_listaPessoas' %}"><button class="btn btn-default">Lista de usuarios</button></a>
+            <a href="{% url 'core_listaConsulta' %}"><button class="btn btn-default">Lista de consultas</button></a>
+            <a href="{% url 'core_home' %}"><button class="btn btn-default">Home</button></a>
+        </p>
+        <p>Copyright - Todos os direitos reservados | Desenvolvido por ALPHA Developers| *Conteúdo para uso acadêmico*</p>
+    </footer>
+
+</body>
+
+</html>
